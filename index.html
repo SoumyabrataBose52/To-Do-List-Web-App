@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="cursor-tracker"></div>
+    <div id="notification-container"></div>
+    <div class="background-effect">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="container">
+        <header>
+            <h1>To-do List Web App</h1>
+        </header>
+        <main>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="What needs to be done?" required>
+                <div class="form-row">
+                    <label for="priority">Priority:</label>
+                    <select id="priority" name="priority">
+                        <option value="low">Low Priority</option>
+                        <option value="medium">Medium Priority</option>
+                        <option value="high">High Priority</option>
+                    </select>
+                    <label for="category">Category:</label>
+                    <select id="category" name="category">
+                        <option value="personal">Personal</option>
+                        <option value="work">Work</option>
+                        <option value="health">Health</option>
+                        <option value="finance">Finance</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Location">
+                </div>
+                <button type="submit">Add Task</button>
+            </form>
+            <div class="sort-buttons">
+                <button id="sort-priority">Sort by Priority</button>
+                <button id="sort-category">Sort by Category</button>
+                <button id="sort-time">Sort by Time</button>
+            </div>
+            <ul id="todo-list"></ul>
+        </main>
+    </div>
+    <div class="corner-tag">
+        Made with ❤️ by <span class="author">Soumyabrata Bose</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
