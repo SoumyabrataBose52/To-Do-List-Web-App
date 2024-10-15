@@ -1,7 +1,5 @@
 # To-Do-List-Web-App
 
-Dedicated to IEEE Computer Society SRM Web Dev Screening Round
-
 A sleek and efficient todo list application built with HTML, CSS, and JavaScript. This application allows users to manage their tasks with features like priority setting, categorization, and sorting.
 
 ## Features
